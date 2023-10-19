@@ -102,5 +102,4 @@ export const skillsData = [
   "Redux",
   "GraphQL",
   "Framer Motion",
-  "Recoil",
 ] as const;

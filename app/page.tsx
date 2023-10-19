@@ -1,7 +1,10 @@
 import About from "@/components/About";
+import ContactSection from "@/components/ContactSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import HeroSection from "@/components/HeroSection";
 import ProjectSection from "@/components/ProjectsSection";
 import SectionDivider from "@/components/SectionDivider";
+import Skills from "@/components/SkillsSection";
 
 export default function Home() {
   return (
@@ -10,6 +13,9 @@ export default function Home() {
       <SectionDivider />
       <About />
       <ProjectSection />
+      <Skills />
+      <ExperienceSection />
+      <ContactSection />
     </main>
   );
 }

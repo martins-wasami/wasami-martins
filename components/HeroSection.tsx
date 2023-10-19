@@ -8,7 +8,10 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 const HeroSection = () => {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+    <section
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      id="home"
+    >
       <div className="flex items-center justify-center ">
         <div className="relative">
           <motion.div
@@ -87,7 +90,7 @@ const HeroSection = () => {
         </Link>
 
         <a
-          href="/CV.pdf"
+          href="/wasami-martins.pdf"
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-transparent active:scale-105 transition-all  border border-black/10 hover:ml-2 hover:mr-2 "
         >
