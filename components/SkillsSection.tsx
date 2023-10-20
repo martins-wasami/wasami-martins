@@ -2,6 +2,7 @@
 
 import SectionHeading from "./SectionHeading";
 import { skillsData } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
@@ -19,8 +20,10 @@ const fadeInAnimationVariants = {
 };
 
 const SkillsSection = () => {
+  const { ref } = useSectionInView("Skills");
   return (
     <section
+      ref={ref}
       id="skills"
       className="mb-28 max-w-[53rem] scroll-mt-20 text-center sm:mb-40"
     >

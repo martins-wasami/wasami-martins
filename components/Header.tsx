@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useContext } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
@@ -13,8 +12,9 @@ import {
 type SectionName = (typeof links)[number]["name"];
 
 const Header = () => {
-  const { activeSection, setActiveSection } = useActiveSectionContext();
-  // const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -38,6 +38,7 @@ const Header = () => {
                   href={hash}
                   onClick={() => {
                     setActiveSection(link.name);
+                    setTimeOfLastClick(Date.now());
                   }}
                   className={clsx(
                     "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",

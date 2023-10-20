@@ -2,11 +2,14 @@
 import { FaPaperPlane } from "react-icons/fa";
 import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 const ContactSection = () => {
+  const { ref } = useSectionInView("Contact");
   return (
     <motion.section
-      id="contact "
+      ref={ref}
+      id="contact"
       className="mb-20 sm:mb-28 w-[min(100%, 38rem)] text-center"
       initial={{
         opacity: 0,
