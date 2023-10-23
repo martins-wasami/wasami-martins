@@ -35,58 +35,49 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Ibadan, Nigeria",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      " I Oversaw STEM Education projects with teammates, build company road map for specific short term projects and also evaluate project progress for team members.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022 - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Front-End Developer and Instructor",
+    location: "Ibadan, Nigeria",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "As a frontend developer, I played a pivotal role in designing and implementing user interfaces that captivate and engage users. My responsibilities encompassed a range of key areas, demonstrating my commitment to delivering exceptional web experiences and also Create and maintain comprehensive course materials, including lesson. ",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Aug 2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: "/assets/projects/bank.png",
+    title: "Nevo Clothing",
+    description: "A unisex boutique ecommerce web app.",
+    tags: ["reactJS", "Context Api", "CSS"],
+    imageUrl: "/assets/projects/nevo-clothing.png",
     github: "https://github.com/wasami-martins/nevo-clothing",
     link: "https://nevo-clothing.vercel.app/",
   },
   {
-    title: "rmtDev",
+    title: "Crypto Hub",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["React", "CSS"],
     imageUrl: "/assets/projects/crypto.png",
     github: "https://github.com/wasami-martins/mShop",
-    link: "https://mshops.vercel.app/",
+    link: " https://crypto-hubs.netlify.app/",
   },
   {
-    title: "Word Analytics",
+    title: "mShop",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: "/assets/projects/crypto.png",
-    github: "https://github.com/wasami-martins/clean-juice",
-    link: "https://clean-juice.vercel.app/",
+    tags: ["React", "Redux", "CSS"],
+    imageUrl: "/assets/projects/mShop.png",
+    github: "https://github.com/wasami-martins/mShop",
+    link: "https://mshops.vercel.app/",
   },
 ] as const;
 
