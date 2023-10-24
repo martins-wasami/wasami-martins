@@ -98,7 +98,7 @@ const HeroSection = () => {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-transparent hover:text-gray-950 hover:border 
-          hover:border-black/10 active:scale-105 transition hover:mr-2 "
+          hover:border-black/10 active:scale-105 transition hover:mr-2  dark:text-gray-950 dark:bg-white"
         >
           Contact me here
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -107,7 +107,7 @@ const HeroSection = () => {
         <a
           href="/wasami-martins.pdf"
           download
-          className="group  bg-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-transparent active:scale-105 transition-all  border border-black/10 hover:ml-2 hover:mr-2  "
+          className="group bg-gray-950  text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-transparent active:scale-105 transition-all  border border-black/10 hover:ml-2 hover:mr-2 dark:text-gray-950 dark:bg-white "
         >
           Download CV
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
