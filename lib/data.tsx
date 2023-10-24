@@ -35,14 +35,16 @@ export const links = [
 
 export const experiencesData = [
   {
+    company: "iTrends",
     title: "Front-End Developer",
     location: "Ibadan, Nigeria",
     description:
       " I Oversaw STEM Education projects with teammates, build company road map for specific short term projects and also evaluate project progress for team members.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2023",
+    date: "Sept 2022 - March 2023",
   },
   {
+    company: "Platformlead Limited",
     title: "Front-End Developer and Instructor",
     location: "Ibadan, Nigeria",
     description:

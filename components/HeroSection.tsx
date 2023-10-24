@@ -1,15 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useInView } from "react-intersection-observer";
-
 import { useSectionInView } from "@/lib/hooks";
+import Typewriter from "typewriter-effect";
 
 const HeroSection = () => {
   const { ref } = useSectionInView("Home", 0.5);
@@ -37,7 +35,7 @@ const HeroSection = () => {
             }}
           >
             <Image
-              src="/assets/martins.jpg"
+              src="/assets/projects/martins.jpg"
               alt="Martins Wasami"
               width="192"
               height="192"
@@ -73,10 +71,29 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&#39;m Martins.</span> I&#39;m a{" "}
-        <span className="font-bold">ReactJS/NextJS developer</span> I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">
+          <Typewriter
+            // onInit={(typewriter) => {
+            //   typewriter
+            //     .typeString(" Hello, I'm Martins")
+            //     .pauseFor(2000)
+            //     .deleteAll()
+            //     .typeString("I'm a ReactJS/NextJS developer")
+            //     .start();
+            // }}
+
+            options={{
+              strings: ["Hello, I'm Martins", "I'm a ReactJS/NextJS developer"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </span>{" "}
+        <span className="text-[18px]">
+          {" "}
+          I am passionate about using technology to create elegant solutions for
+          businesses and individuals in form of web application.
+        </span>
       </motion.h1>
 
       <motion.div
