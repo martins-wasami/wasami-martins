@@ -73,15 +73,6 @@ const HeroSection = () => {
       >
         <span className="font-bold">
           <Typewriter
-            // onInit={(typewriter) => {
-            //   typewriter
-            //     .typeString(" Hello, I'm Martins")
-            //     .pauseFor(2000)
-            //     .deleteAll()
-            //     .typeString("I'm a ReactJS/NextJS developer")
-            //     .start();
-            // }}
-
             options={{
               strings: ["Hello, I'm Martins", "I'm a ReactJS/NextJS developer"],
               autoStart: true,
@@ -116,7 +107,7 @@ const HeroSection = () => {
         <a
           href="/wasami-martins.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-transparent active:scale-105 transition-all  border border-black/10 hover:ml-2 hover:mr-2 "
+          className="group  bg-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-transparent active:scale-105 transition-all  border border-black/10 hover:ml-2 hover:mr-2  "
         >
           Download CV
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />

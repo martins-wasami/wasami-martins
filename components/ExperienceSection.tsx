@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./SectionHeading";
 import {
   VerticalTimeline,
@@ -8,10 +8,12 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
+import { useTheme } from "next-themes";
 
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Experience() {
+  const { resolvedTheme, setTheme } = useTheme();
   const { ref } = useSectionInView("Experience", 0.5);
   return (
     <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
@@ -21,21 +23,20 @@ export default function Experience() {
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
-                // background:
-                //   theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                background:
+                  resolvedTheme === "light"
+                    ? "#f3f4f6"
+                    : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
-              contentArrowStyle={
-                {
-                  // borderRight:
-                  // "light"
-                  //     ? "0.4r  theme === em solid #9ca3af"
-                  //     : "0.4rem solid rgba(255, 255, 255, 0.5)",
-                }
-              }
+              contentArrowStyle={{
+                borderRight: "light"
+                  ? "0.4r  theme === em solid #9ca3af"
+                  : "0.4rem solid rgba(255, 255, 255, 0.5)",
+              }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
