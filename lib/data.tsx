@@ -65,7 +65,7 @@ export const projectsData = [
   },
   {
     title: "Crypto Hub",
-    description: "A crypto market app for coin rates",
+    description: "A crypto market app for showing coin rates",
     tags: ["React", "CSS"],
     imageUrl: "/assets/projects/crypto.png",
     github: "https://github.com/wasami-martins/mShop",
