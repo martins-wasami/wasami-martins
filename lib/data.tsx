@@ -65,8 +65,7 @@ export const projectsData = [
   },
   {
     title: "Crypto Hub",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    description: "A crypto market app for coin rates",
     tags: ["React", "CSS"],
     imageUrl: "/assets/projects/crypto.png",
     github: "https://github.com/wasami-martins/mShop",
@@ -74,8 +73,7 @@ export const projectsData = [
   },
   {
     title: "mShop",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    description: "A multipurpose e-commerce online store",
     tags: ["React", "Redux", "CSS"],
     imageUrl: "/assets/projects/mShop.png",
     github: "https://github.com/wasami-martins/mShop",
