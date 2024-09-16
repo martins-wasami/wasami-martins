@@ -56,6 +56,30 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Ventrack",
+    description: "web-based accounting software, which manage inventories, invoicing, receipt bookkeeping, and point-of-sale applications.",
+    tags: ["reactJS", "redux", "tailwindCSS"],
+    imageUrl: "/assets/projects/ventrack.png",
+    github: "https://github.com/wasami-martins",
+    link: "https://ventetrack.com/",
+  },
+  {
+    title: "Plitlearn ICT",
+    description: "Developed a comprehensive website showcasing services, courses, pricing, and more.",
+    tags: ["nextjs","reactJS", "typeScript", "tailwindCSS"],
+    imageUrl: "/assets/projects/plitlearn.png",
+    github: "https://github.com/wasami-martins",
+    link: "https://plitlearn.com/",
+  },
+  {
+    title: "MyRealquotes",
+    description: "Developed an insurance website for lead generation.",
+    tags: ["reactJS","tailwindCSS", "zustand"],
+    imageUrl: "/assets/projects/realQ.png",
+    github: "https://github.com/wasami-martins",
+    link: "https://www.myrealquotes.com/",
+  },
+  {
     title: "Nevo Clothing",
     description: "A unisex boutique ecommerce web app.",
     tags: ["reactJS", "Context Api", "CSS"],
