@@ -72,12 +72,28 @@ export const projectsData = [
     link: "https://plitlearn.com/",
   },
   {
+    title: "PlatformLead",
+    description: "Developed a comprehensive website showcasing services by platformlead limited.",
+    tags: ["nextjs","reactJS", "typeScript", "tailwindCSS"],
+    imageUrl: "/assets/projects/platform.png",
+    github: "https://github.com/wasami-martins",
+    link: "https://platformlead.com/",
+  },
+  {
     title: "MyRealquotes",
     description: "Developed an insurance website for lead generation.",
     tags: ["reactJS","tailwindCSS", "zustand"],
     imageUrl: "/assets/projects/realQ.png",
     github: "https://github.com/wasami-martins",
     link: "https://www.myrealquotes.com/",
+  },
+  {
+    title: "Easy Property",
+    description: "Developed a rental website for a real estate business.",
+    tags: ["reactJS","tailwindCSS", "zustand"],
+    imageUrl: "/assets/projects/easy.png",
+    github: "https://github.com/wasami-martins",
+    link: "https://easy-properties.vercel.app/",
   },
   {
     title: "Nevo Clothing",
